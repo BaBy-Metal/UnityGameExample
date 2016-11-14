@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{279F7FE3-5755-259D-9178-869F06E968F2}") = "pixelnest_unity_study", "Assembly-CSharp.csproj", "{BFC3D3A4-DAE3-2119-B57F-3E31C92C546E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFC3D3A4-DAE3-2119-B57F-3E31C92C546E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC3D3A4-DAE3-2119-B57F-3E31C92C546E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC3D3A4-DAE3-2119-B57F-3E31C92C546E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC3D3A4-DAE3-2119-B57F-3E31C92C546E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

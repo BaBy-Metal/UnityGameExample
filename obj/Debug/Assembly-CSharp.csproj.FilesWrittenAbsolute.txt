@@ -1,0 +1,17 @@
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/Temp/bin/Debug/UnityEngine.dll
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/Temp/bin/Debug/UnityEditor.dll
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/Temp/bin/Debug/Mono.Cecil.dll
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/Temp/bin/Debug/Unity.DataContract.dll
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/obj/Debug/Assembly-CSharp.dll
+/Users/zhangshibo/Desktop/unity/first unity project/pixelnest_unity_study/obj/Debug/Assembly-CSharp.dll.mdb
