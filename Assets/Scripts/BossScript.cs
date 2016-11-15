@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 
 /// <summary>
 /// Enemy generic behavior
@@ -20,20 +22,15 @@ public class BossScript : MonoBehaviour
 	private float aiCooldown;
 	private bool isAttacking;
 	private Vector2 positionTarget;
+	private Collider2D collider;
 
 	void Awake()
 	{
-		// Retrieve the weapon only once
 		weapons = GetComponentsInChildren<WeaponScript>();
-
-		// Retrieve scripts to disable when not spawned
 		moveScript = GetComponent<MoveScript>();
-
-		// Get the animator
 		animator = GetComponent<Animator>();
-
-		// Get the renderers in children
 		renderers = GetComponentsInChildren<SpriteRenderer>();
+		collider = GetComponent<Collider2D> ();
 	}
 
 	void Start()
@@ -42,7 +39,7 @@ public class BossScript : MonoBehaviour
 
 		// Disable everything
 		// -- Collider
-		//collider2D.enabled = false;
+		collider.enabled = false;
 		// -- Moving
 		moveScript.enabled = false;
 		// -- Shooting
@@ -115,11 +112,11 @@ public class BossScript : MonoBehaviour
 				}
 
 				// Are we at the target? If so, find a new one
-//				if (collider2D.OverlapPoint(positionTarget))
-//				{
-//					// Reset, will be set at the next frame
-//					positionTarget = Vector2.zero;
-//				}
+				if (collider.OverlapPoint(positionTarget))
+				{
+					// Reset, will be set at the next frame
+					positionTarget = Vector2.zero;
+				}
 
 				// Go to the point
 				Vector3 direction = ((Vector3)positionTarget - this.transform.position);
@@ -136,7 +133,7 @@ public class BossScript : MonoBehaviour
 
 		// Enable everything
 		// -- Collider
-		//collider2D.enabled = true;
+		collider.enabled = true;
 		// -- Moving
 		moveScript.enabled = true;
 		// -- Shooting

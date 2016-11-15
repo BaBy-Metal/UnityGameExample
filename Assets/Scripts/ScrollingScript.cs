@@ -8,6 +8,7 @@ public class ScrollingScript : MonoBehaviour {
 	public Vector2 direction = new Vector2(-1, 0);
 	public bool isLinkedToCamera = false;
 	public bool isLooping = false;
+	public float scrollDistanse = 0;
 
 	private List<SpriteRenderer> backgroundPart;
 
@@ -48,15 +49,27 @@ public class ScrollingScript : MonoBehaviour {
 				if (firstChild.transform.position.x < Camera.main.transform.position.x) {
 					if (firstChild.IsVisibleFrom (Camera.main) == false) {
 						Debug.Log ("disapear.");
-						SpriteRenderer lastChild = backgroundPart.LastOrDefault ();
-						if (lastChild != null) {
-							Vector3 lastPosition = lastChild.transform.position;
-							Vector3 lastSize = (lastChild.bounds.max - lastChild.bounds.min);
-							firstChild.transform.position = new Vector3 (lastPosition.x + lastSize.x, 
-								firstChild.transform.position.y, 
-								firstChild.transform.position.z);
-							backgroundPart.Remove (firstChild);
-							backgroundPart.Add (firstChild);
+						if (scrollDistanse != 0) {
+							SpriteRenderer lastChild = backgroundPart.LastOrDefault ();
+							if (lastChild != null) {
+								Vector3 lastPosition = lastChild.transform.position;
+								firstChild.transform.position = new Vector3 (lastPosition.x + scrollDistanse, 
+									firstChild.transform.position.y,
+									firstChild.transform.position.z);
+								backgroundPart.Remove(firstChild);
+								backgroundPart.Add(firstChild);
+							}
+						} else {
+							SpriteRenderer lastChild = backgroundPart.LastOrDefault ();
+							if (lastChild != null) {
+								Vector3 lastPosition = lastChild.transform.position;
+								Vector3 lastSize = (lastChild.bounds.max - lastChild.bounds.min);
+								firstChild.transform.position = new Vector3 (lastPosition.x + lastSize.x, 
+									firstChild.transform.position.y, 
+									firstChild.transform.position.z);
+								backgroundPart.Remove (firstChild);
+								backgroundPart.Add (firstChild);
+							}
 						}
 					}
 				}
