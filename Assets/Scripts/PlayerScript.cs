@@ -27,7 +27,7 @@ public class PlayerScript : MonoBehaviour {
 
 		AvoidOutOfScene ();
 
-		MakeEnemy ();
+		//MakeEnemy ();
 	}
 
 	void AvoidOutOfScene() {
